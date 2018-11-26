@@ -31,7 +31,7 @@
     <div class="container">
         <div class="card border border-info">
             <div class="card-header bg-info text-white py-1">
-                <h6>Add Train</h6>
+                <h6>Current Train Schedule</h6>
             </div>
             <table class="table">
                 <thead>
@@ -43,14 +43,14 @@
                         <th scope="col">Minutes Away</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="trainSchedules">
                 </tbody>
             </table>
         </div>
     </div>
 
 
-    <div class="container pt-3">
+    <div class="container py-3">
         <div class="card border border-info">
             <div class="card-header bg-info text-white py-1">
                 <h6>Add Train</h6>
@@ -66,11 +66,11 @@
                 </div>
                 <div class="form-group mx-3 mt-3">
                     <label for="startYear">First Train Time (HH:mm - military time)</label>
-                    <input type="text" class="form-control" id="trainFirstTime">
+                    <input type="text" class="form-control" id="trainNextArrivalTime">
                 </div>
                 <div class="form-group mx-3 mt-3">
                     <label for="endYear">Frequency (min)</label>
-                    <input type="text" class="form-control" id="trainfrequency">
+                    <input type="text" class="form-control" id="trainFrequency">
                 </div>
                 <div class="form-group mx-3 mt-3">
                     <button type="submit" class="btn btn-info" id="submitBtn">Submit</button>
